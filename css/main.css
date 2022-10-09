@@ -17,14 +17,17 @@ nav {
     justify-content: space-between;
     text-align: center;
     padding: 15px 0px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 nav .icon {
-    padding-left: 30px;
-    font-family: "copperplate";
+    padding-left: 100px;
+    padding-top: 10px;
     font-size: 35px;
     font-weight: 800;
     cursor: pointer;
+
 }
 
 nav ul {
@@ -36,14 +39,14 @@ nav ul {
 nav ul li {
     margin: 10px;
     padding: 10px;
-    height: 0px;
+    height: px;
 }
 
 nav ul li a {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    padding: 5px 5px 24px 5px;
+    padding: 10px;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
@@ -51,17 +54,21 @@ nav ul li a {
 nav ul li a:hover {
     background: #f6f5f7;
     color: #000;
-    padding: 5px 5px 24px 5px;
-    border: transparent;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 50px; 
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
 }
 
 nav ul li a#onlink {
     background: #f6f5f7;
     color: #000;
-    padding: 5px 5px 24px 5px;
     border: transparent;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
 }
 
 nav .search_box {
@@ -80,6 +87,9 @@ nav .search_box input {
     height: 100%;
     font-size: 20px;
     width: 350px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
 }
 
 nav .search_box span {
@@ -93,6 +103,7 @@ nav .search_box span {
     position: relative;
     cursor: pointer;
     z-index: 1;
+    
 }
 nav .search_box span:hover {
     color:#fff;
@@ -126,6 +137,7 @@ nav .bar span {
     position: absolute;
     color: #fff;
     font-size: 35px;
+    
 }
 
 
@@ -200,24 +212,26 @@ input[type="checkbox"]{
 
 .menu {
     display: flex;
+    margin-top: 50px;
 }
 
 .container {
-    display: flex;
+    display: block;
     margin: 40px;
+    padding-left: 40px;
 }
 
-.submitted {
+#tickets {
+    float: left;
     text-align: center;
-    padding: 0px 30px;
-    
 }
 
 .title {
     color: white;
     display: block;
-    font-weight: bol;
+    font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     padding: 10px;
     border: 1px transparent;
     border-bottom: none;
@@ -234,8 +248,24 @@ input[type="checkbox"]{
     overflow-x: hidden;
     overflow-y: auto;
     text-align:justify;
-    height: 500px;
+    height: 200px;
+    width: 500px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
     0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.projects_scroll {
+        padding: 10px 50px;
+        margin-top: 0px;
+        border: 1px transparent;
+        border-top: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align:justify;
+        height: 475px;
+        width: 500px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }

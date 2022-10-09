@@ -5,28 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/report.css">
-    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
-    <title>Home Page</title>
+    <title>Document</title>
 </head>
 <body>
     <input type="checkbox" id="check">
-    <nav>
-        <div class="icon">Bug Tracker</div>
-        <div class="search_box">
-            <input type="search" placeholder="Search here">
-            <span class="fa fa-search"></span>
+        <nav>
+            <div class="icon">Bug Tracker.</div>
+                <div class="search_box">
+                <input type="search" placeholder="Search here">
+                <span class="fa fa-search"></span>
+            </div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="bugs.html">Bugs</a></li>
+                <li><a href="report.html"id="onlink">Report</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul> 
+            <label for="" class="bar">
+                <span class="fa fa-bars" id="bars"></span>
+                <span class="fa fa-times" id="times"></span>
+            </label>           
+        </nav>
+        <div class="parent-container">
+            <div class="chld-container">
+                <div class="left-container">
+                    <div class="selector-container>">
+                        <select name="selector-1" id="selector-1">
+                            <option value="Task">Task</option>
+                            <option value="Bug">Bug</option>
+                            <option value="Request">Request</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-container">
+                        <form>
+                            <label class="label" for="subject">Subject:</label>
+                            <br>
+                            <textarea class="text-area" name="subject" rows="2" cols="50"> Subject...</textarea>
+                            <br>
+                            <label class="label" for="disc">Discription:</label>
+                            <br>
+                            <textarea class="text-area" name="disc" rows="25" cols="55"> Description...</textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-container">
+                        <label for="priority">Priority:</label>
+                        <select name="priority" id="priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                        <label for="assignee">Assignee</label>
+                        <select name="assignee" id="assignee"></select>
+                        <label for="category">Category</label>
+                        <select name="category" id="category">
+                            <option value="frontend">Front End</option>
+                            <option value="backend">Back End</option>
+                            <option value="design">Design</option>
+                        </select>
+                        <label for="date">Due Date</label>
+                        <br>
+                        <input class="text-area" type="date" name="duedate">
+                        <button type="submit" class="button">Add</button>
+                    
+                </div>
+            </div>
         </div>
-        <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="bugs.html">Bugs</a></li>
-            <li><a href="report.html"id="onlink">Report</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul> 
-        <label for="" class="bar">
-            <span class="fa fa-bars" id="bars"></span>
-            <span class="fa fa-times" id="times"></span>
-
-        </label>           
-    </nav>
 </body>
 </html>
