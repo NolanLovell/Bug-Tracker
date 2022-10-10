@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/report.css">
+    <title>Report Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="icon">Bug Tracker.</div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="bugs.html">Bugs</a></li>
+                <li><a href="report.html" id="onlink">Report</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul> 
+        </div>
+    </nav>
+    <section class="section">
+        <div class="chld-container">
+            <form class="form" id="form-1">
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="task">Task</option>
+                    <option value="bug">Bug</option>
+                    <option value="request">Request</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <input type="subject" value="Subject...">
+                <label for="description">Description:</label>
+                <textarea name="description" cols="30" rows="17"></textarea>
+            </form>
+            <form class="form" id="form-2">
+                <label for="priority">Priority:</label>
+                <select name="priority" id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option value="frontend">Front End</option>
+                    <option value="backend">Back End</option>
+                    <option value="design">Design</option>
+                </select>
+                <label for="assignee">Assignee:</label>
+                <select name="assignee" id="assignee">
+                    <option value="low">David Marsh</option>
+                    <option value="medium">Nolan Marsh</option>
+                    <option value="high">Atticus Finch</option>
+                </select>
+                <label for="date">Date:</label>
+                <input type="date">
+                <br>
+                <button type="button">Add</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
